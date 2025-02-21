@@ -1,4 +1,3 @@
-import Link from "next/link"
 import Sidebar from "./sidebar/page"
 import Chat from "./chat/page"
 

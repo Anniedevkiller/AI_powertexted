@@ -1,5 +1,4 @@
 import Link from "next/link"
-type Props = React.PropsWithChildren
 
 export default function Sidebar() {
     return(
