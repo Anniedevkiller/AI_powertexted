@@ -3,6 +3,17 @@
 import type React from "react"
 
 import { useState } from "react"
+
+// Extend the Window interface to include the ai property
+declare global {
+  interface Window {
+    ai: {
+      languageDetection: {
+        detectLanguage: (text: string) => Promise<{ language: string }>
+      }
+    }
+  }
+}
 import { Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
